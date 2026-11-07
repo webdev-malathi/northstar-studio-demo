@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A clean, responsive business website demo.">
+  <title>Northstar Studio | Make Your Next Move</title>
+  <style>
+    :root{--ink:#17221f;--muted:#66736d;--cream:#f6f5ef;--green:#1f5948;--lime:#d5edaa;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,90%);margin:auto}
+    header{padding:22px 0;background:rgba(246,245,239,.94);position:sticky;top:0;z-index:5;border-bottom:1px solid #e7e7df}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .logo{font-weight:800;letter-spacing:-.04em;font-size:1.25rem}.logo span{color:var(--green)}
+    .navlinks{display:flex;gap:26px;color:#4e5a54;font-size:.93rem}.navlinks a:hover{color:var(--green)}
+    .btn{display:inline-block;padding:12px 20px;border-radius:999px;background:var(--green);color:white;font-weight:700;border:0;cursor:pointer}
+    .btn.light{background:var(--lime);color:var(--ink)}
+    .hero{padding:88px 0 76px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:54px}
+    .eyebrow{color:var(--green);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800}
+    h1{font-size:clamp(2.8rem,6vw,5.3rem);line-height:1.02;letter-spacing:-.065em;margin:16px 0 22px}
+    .hero p{font-size:1.12rem;color:var(--muted);max-width:520px;margin-bottom:28px}
+    .hero-art{min-height:390px;border-radius:28px;background:var(--green);position:relative;overflow:hidden;padding:34px;color:white}
+    .hero-art:before{content:"";position:absolute;width:290px;height:290px;border-radius:50%;background:var(--lime);right:-55px;top:-60px}
+    .hero-art:after{content:"";position:absolute;width:210px;height:210px;border-radius:50%;border:1px solid rgba(255,255,255,.5);right:50px;bottom:-80px}
+    .art-card{position:absolute;left:34px;bottom:34px;background:#fff;color:var(--ink);padding:24px;border-radius:18px;width:min(75%,300px);box-shadow:0 18px 50px #10271f44}
+    .art-card strong{font-size:1.5rem;display:block;line-height:1.2}.art-card small{color:var(--muted)}
+    section{padding:76px 0}.section-head{max-width:650px;margin-bottom:34px}.section-head h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.05em;line-height:1.1;margin:10px 0}
+    .section-head p{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:white;padding:27px;border-radius:20px;border:1px solid #e9e9e2}
+    .num{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--lime);font-weight:800;color:var(--green)}
+    .card h3{margin:18px 0 8px}.card p{color:var(--muted);margin:0}
+    .about{background:#e9eee6}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}
+    .stat{font-size:4rem;line-height:1;font-weight:800;letter-spacing:-.07em;color:var(--green)}
+    .about-copy h2{font-size:clamp(2rem,4vw,3.1rem);letter-spacing:-.05em;line-height:1.1;margin:10px 0 18px}
+    .about-copy p{color:var(--muted)}
+    .contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px}
+    form{background:white;border:1px solid #e9e9e2;border-radius:20px;padding:28px}
+    label{display:block;font-weight:700;font-size:.9rem;margin:0 0 6px}
+    input,textarea{width:100%;padding:13px 14px;border:1px solid #dfe3dc;border-radius:10px;font:inherit;margin-bottom:16px;background:#fcfcfa}
+    textarea{min-height:120px;resize:vertical}
+    .notice{font-size:.85rem;color:var(--muted);margin:12px 0 0}
+    footer{background:var(--ink);color:white;padding:28px 0}
+    footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#d5ddd7;font-size:.9rem}
+    @media(max-width:760px){.navlinks{display:none}.hero,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:60px 0;gap:30px}.hero-art{min-height:300px}.cards{grid-template-columns:1fr}.about-grid{gap:25px}section{padding:58px 0}}
+  </style>
+</head>
+<body>
+  <header><nav class="wrap">
+    <a class="logo" href="#">northstar<span>.</span></a>
+    <div class="navlinks"><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+    <a class="btn" href="#contact">Let's talk</a>
+  </nav></header>
+
+  <main>
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow">A creative business studio</div>
+        <h1>Make your next move a <span style="color:var(--green)">great one.</span></h1>
+        <p>We help ambitious people turn good ideas into clear, thoughtful experiences. Simple strategy, practical creativity, and work that moves you forward.</p>
+        <a class="btn" href="#services">Explore what we do</a>
+      </div>
+      <div class="hero-art" aria-label="Abstract green and cream graphic">
+        <div style="position:relative;z-index:1;font-weight:700;letter-spacing:.12em">THINK CLEAR. MOVE FORWARD.</div>
+        <div class="art-card"><small>YOUR NEXT CHAPTER</small><strong>Start with a better plan.</strong><small>Thoughtful work. Real progress.</small></div>
+      </div>
+    </div>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">What we offer</div><h2>Good ideas deserve great execution.</h2><p>From the first conversation to the final details, we make the process feel clear and manageable.</p></div>
+        <div class="cards">
+          <article class="card"><span class="num">01</span><h3>Strategy</h3><p>Find the right direction, define your goals, and make a practical plan for what comes next.</p></article>
+          <article class="card"><span class="num">02</span><h3>Creative design</h3><p>Build a consistent look and feel that communicates your value with confidence.</p></article>
+          <article class="card"><span class="num">03</span><h3>Digital experiences</h3><p>Create useful, responsive online experiences that are easy for people to navigate.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div><div class="stat">01<span style="font-size:2rem">/</span>step</div><p style="color:var(--muted)">A clear starting point makes all the difference.</p></div>
+        <div class="about-copy"><div class="eyebrow">A little about us</div><h2>Small steps. Meaningful progress.</h2><p>Northstar Studio is a fictional business created as a website portfolio demo. This sample shows how a business website can introduce a brand, explain its services, and guide visitors toward getting in touch.</p><a class="btn" href="#contact">Get in touch</a></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap contact-grid">
+        <div class="section-head"><div class="eyebrow">Contact</div><h2>Have something in mind?</h2><p>Tell us a little about your project. This demo form shows the layout only and does not send messages.</p></div>
+        <form id="contactForm">
+          <label for="name">Your name</label><input id="name" name="name" placeholder="Enter your name" required>
+          <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required>
+          <label for="message">Your message</label><textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+          <button class="btn" type="submit">Send message</button>
+          <p class="notice" id="formNotice" role="status">Demo only — connect a form service before using this on a live client website.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap"><span>© 2026 Northstar Studio — Demo website</span><span>Made as a portfolio practice project</span></div></footer>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      document.getElementById('formNotice').textContent = 'Thanks! This is a demo form and no message was sent.';
+    });
+  </script>
+</body>
+</html>
